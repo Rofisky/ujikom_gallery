@@ -1,0 +1,24 @@
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Kolom otomatis berdasarkan lebar */
+  gap: 20px; /* Jarak antar foto */
+  padding: 20px;
+}
+
+.grid-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
